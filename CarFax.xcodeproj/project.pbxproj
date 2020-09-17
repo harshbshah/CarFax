@@ -27,6 +27,7 @@
 		F187EF922513B9E1008A7E6D /* BaseUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187EF912513B9E1008A7E6D /* BaseUILabel.swift */; };
 		F187EF942513BA53008A7E6D /* BaseUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187EF932513BA53008A7E6D /* BaseUIButton.swift */; };
 		F187EF962513BB27008A7E6D /* BaseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187EF952513BB27008A7E6D /* BaseImageView.swift */; };
+		F187EF982513D773008A7E6D /* CarListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187EF972513D773008A7E6D /* CarListingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		F187EF912513B9E1008A7E6D /* BaseUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUILabel.swift; sourceTree = "<group>"; };
 		F187EF932513BA53008A7E6D /* BaseUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIButton.swift; sourceTree = "<group>"; };
 		F187EF952513BB27008A7E6D /* BaseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseImageView.swift; sourceTree = "<group>"; };
+		F187EF972513D773008A7E6D /* CarListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			children = (
 				F187EF862513B796008A7E6D /* CoustomCell */,
 				F187EF812513B674008A7E6D /* UsedCarsListModel.swift */,
+				F187EF972513D773008A7E6D /* CarListingViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				F187EF5B2513ADEA008A7E6D /* ListingViewController.swift in Sources */,
 				F187EF942513BA53008A7E6D /* BaseUIButton.swift in Sources */,
 				F187EF572513ADEA008A7E6D /* AppDelegate.swift in Sources */,
+				F187EF982513D773008A7E6D /* CarListingViewModel.swift in Sources */,
 				F187EF822513B674008A7E6D /* UsedCarsListModel.swift in Sources */,
 				F187EF592513ADEA008A7E6D /* SceneDelegate.swift in Sources */,
 				F187EF902513B862008A7E6D /* Constants.swift in Sources */,

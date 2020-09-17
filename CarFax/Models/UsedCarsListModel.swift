@@ -85,8 +85,8 @@ struct Listing: Codable {
     var images: Images?
     var interiorColor: String?
     var isEnriched: Bool?
-    var listPrice: Int?
-    var make: Make?
+    var listPrice: Double?
+    var make: String?
     var mileage: Int?
     var model: String?
     var monthlyPaymentEstimate: MonthlyPaymentEstimate?
@@ -107,7 +107,7 @@ struct Listing: Codable {
     var subTrim: BedLength?
     var topOptions: [String]?
     var transmission: Transmission?
-    var trim: Trim?
+    var trim: String?
     var vdpURL: String?
     var vehicleCondition: VehicleCondition?
     var vehicleUseHistory: History?
@@ -204,7 +204,7 @@ struct Dealer: Codable {
     var name: String?
     var onlineOnly: Bool?
     var phone: String?
-    var state: State?
+    var state: String?
     var zip: String?
 
     enum CodingKeys: String, CodingKey {

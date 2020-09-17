@@ -8,7 +8,7 @@ target 'CarFax' do
   # Pods for CarFax
   pod 'SDWebImage', '~> 5.0'
   pod 'ReachabilitySwift'
-
+  pod 'Alamofire'
   target 'CarFaxTests' do
     inherit! :search_paths
     # Pods for testing

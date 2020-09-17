@@ -16,7 +16,7 @@ struct CarPreview:Codable
     var carMake:String?
     var carTrim:String?
     var carPrice:Double?
-    var carMilage:String?
+    var carMilage:Int?
     var carDealerCity:String?
     var carDelaerState:String?
     var carDealaerContact:String?

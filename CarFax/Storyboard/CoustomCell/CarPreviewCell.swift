@@ -73,7 +73,10 @@ class CarPreviewCell: UITableViewCell {
             {
                 self.priceLabel.text = "$ \(self.carPreviewData?.carPrice ?? 0)"
             }
-            self.milageLabel.text = "\(self.carPreviewData?.carMilage ?? "")"
+            if let _ = self.carPreviewData?.carMilage
+            {
+            self.milageLabel.text = "\(self.carPreviewData?.carMilage ?? 0)"
+            }
             self.locationLabel.text = "\(self.carPreviewData?.carDealerCity ?? "") , \(self.carPreviewData?.carDelaerState ?? "")"
             if let _ = self.carPreviewData?.carDealaerContact
             {
