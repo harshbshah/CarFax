@@ -19,45 +19,68 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfm-Xv-zhp">
                         <rect key="frame" x="20" y="11" width="531" height="251"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqN-Ov-a8t" customClass="BaseImageView" customModule="CarFax" customModuleProvider="target">
-                                <rect key="frame" x="119" y="27" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YearMakeModel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SY4-oi-YmK" customClass="BaseUILabel" customModule="CarFax" customModuleProvider="target">
-                                <rect key="frame" x="30" y="175" width="123" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTn-n8-Q6y" customClass="BaseUILabel" customModule="CarFax" customModuleProvider="target">
-                                <rect key="frame" x="30" y="204" width="39" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Milage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LS-Yg-7gb" customClass="BaseUILabel" customModule="CarFax" customModuleProvider="target">
-                                <rect key="frame" x="119" y="199" width="51" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbH-2a-rkQ" customClass="BaseUILabel" customModule="CarFax" customModuleProvider="target">
-                                <rect key="frame" x="185" y="202" width="66" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hL-HC-oaa" customClass="BaseUIButton" customModule="CarFax" customModuleProvider="target">
-                                <rect key="frame" x="298" y="202" width="114" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="(123)-456-7890"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gK1-8v-ioI">
+                                <rect key="frame" x="5" y="5" width="521" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vqN-Ov-a8t" customClass="BaseImageView" customModule="CarFax" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="521" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="800" constant="150" id="7zX-23-rol"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ose-0B-O77">
+                                <rect key="frame" x="5" y="182.5" width="521" height="31.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="rTn-n8-Q6y" customClass="BaseUILabel" customModule="CarFax" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="5.5" width="173.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="4LS-Yg-7gb" customClass="BaseUILabel" customModule="CarFax" customModuleProvider="target">
+                                        <rect key="frame" x="173.5" y="5.5" width="174" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="PbH-2a-rkQ" customClass="BaseUILabel" customModule="CarFax" customModuleProvider="target">
+                                        <rect key="frame" x="347.5" y="5.5" width="173.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hL-HC-oaa" customClass="BaseUIButton" customModule="CarFax" customModuleProvider="target">
+                                <rect key="frame" x="5" y="216" width="521" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="Call Dealer"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YearMakeModel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SY4-oi-YmK" customClass="BaseUILabel" customModule="CarFax" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="160" width="531" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="5hL-HC-oaa" secondAttribute="trailing" constant="5" id="8HF-hw-wme"/>
+                            <constraint firstItem="Ose-0B-O77" firstAttribute="leading" secondItem="qfm-Xv-zhp" secondAttribute="leading" constant="5" id="C5x-MW-ozT"/>
+                            <constraint firstItem="SY4-oi-YmK" firstAttribute="top" secondItem="gK1-8v-ioI" secondAttribute="bottom" constant="5" id="Ubp-Ic-B1Q"/>
+                            <constraint firstItem="5hL-HC-oaa" firstAttribute="top" secondItem="Ose-0B-O77" secondAttribute="bottom" constant="2" id="VYK-1c-iZA"/>
+                            <constraint firstItem="gK1-8v-ioI" firstAttribute="top" secondItem="qfm-Xv-zhp" secondAttribute="top" constant="5" id="Wht-dD-QQS"/>
+                            <constraint firstItem="gK1-8v-ioI" firstAttribute="leading" secondItem="qfm-Xv-zhp" secondAttribute="leading" constant="5" id="XJT-af-ZOQ"/>
+                            <constraint firstItem="Ose-0B-O77" firstAttribute="top" secondItem="SY4-oi-YmK" secondAttribute="bottom" constant="2" id="ZVn-2E-7OJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ose-0B-O77" secondAttribute="trailing" constant="5" id="avS-Ki-nlq"/>
+                            <constraint firstItem="5hL-HC-oaa" firstAttribute="centerX" secondItem="qfm-Xv-zhp" secondAttribute="centerX" id="lNC-vh-0uy"/>
+                            <constraint firstAttribute="trailing" secondItem="SY4-oi-YmK" secondAttribute="trailing" id="mVy-OH-WGf"/>
+                            <constraint firstAttribute="trailing" secondItem="gK1-8v-ioI" secondAttribute="trailing" constant="5" id="sDf-G3-Jv5"/>
+                            <constraint firstAttribute="bottom" secondItem="5hL-HC-oaa" secondAttribute="bottom" constant="2" id="wdA-hk-a6I"/>
+                            <constraint firstItem="SY4-oi-YmK" firstAttribute="leading" secondItem="qfm-Xv-zhp" secondAttribute="leading" id="yNK-WI-OOz"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
@@ -72,9 +95,11 @@
                 <outlet property="callDealerButton" destination="5hL-HC-oaa" id="1B6-S0-bqy"/>
                 <outlet property="carCoverImage" destination="vqN-Ov-a8t" id="W7f-Lf-sa3"/>
                 <outlet property="carYearMakeModelLabel" destination="SY4-oi-YmK" id="T29-io-uCz"/>
+                <outlet property="coverImageHeightConstraint" destination="7zX-23-rol" id="H1k-O7-ulq"/>
                 <outlet property="locationLabel" destination="PbH-2a-rkQ" id="brP-wd-v7b"/>
                 <outlet property="milageLabel" destination="4LS-Yg-7gb" id="PeV-gc-omX"/>
                 <outlet property="priceLabel" destination="rTn-n8-Q6y" id="yfc-zX-gcY"/>
+                <outlet property="wrapperView" destination="qfm-Xv-zhp" id="gOK-8f-k7g"/>
             </connections>
             <point key="canvasLocation" x="178.98550724637681" y="201.22767857142856"/>
         </tableViewCell>

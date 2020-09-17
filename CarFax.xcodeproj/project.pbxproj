@@ -28,6 +28,8 @@
 		F187EF942513BA53008A7E6D /* BaseUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187EF932513BA53008A7E6D /* BaseUIButton.swift */; };
 		F187EF962513BB27008A7E6D /* BaseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187EF952513BB27008A7E6D /* BaseImageView.swift */; };
 		F187EF982513D773008A7E6D /* CarListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187EF972513D773008A7E6D /* CarListingViewModel.swift */; };
+		F187EF9A2513EAD7008A7E6D /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187EF992513EAD7008A7E6D /* CGSize.swift */; };
+		F187EF9C2513EB1F008A7E6D /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187EF9B2513EB1F008A7E6D /* UIDevice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		F187EF932513BA53008A7E6D /* BaseUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIButton.swift; sourceTree = "<group>"; };
 		F187EF952513BB27008A7E6D /* BaseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseImageView.swift; sourceTree = "<group>"; };
 		F187EF972513D773008A7E6D /* CarListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListingViewModel.swift; sourceTree = "<group>"; };
+		F187EF992513EAD7008A7E6D /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		F187EF9B2513EB1F008A7E6D /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				F187EF832513B6E2008A7E6D /* BaseViewController.swift */,
+				F187EF9B2513EB1F008A7E6D /* UIDevice.swift */,
+				F187EF992513EAD7008A7E6D /* CGSize.swift */,
 				F187EF952513BB27008A7E6D /* BaseImageView.swift */,
 				F187EF932513BA53008A7E6D /* BaseUIButton.swift */,
 				F187EF912513B9E1008A7E6D /* BaseUILabel.swift */,
@@ -407,6 +413,8 @@
 				F187EF982513D773008A7E6D /* CarListingViewModel.swift in Sources */,
 				F187EF822513B674008A7E6D /* UsedCarsListModel.swift in Sources */,
 				F187EF592513ADEA008A7E6D /* SceneDelegate.swift in Sources */,
+				F187EF9C2513EB1F008A7E6D /* UIDevice.swift in Sources */,
+				F187EF9A2513EAD7008A7E6D /* CGSize.swift in Sources */,
 				F187EF902513B862008A7E6D /* Constants.swift in Sources */,
 				F187EF8E2513B81D008A7E6D /* CarPreviewModel.swift in Sources */,
 				F187EF842513B6E2008A7E6D /* BaseViewController.swift in Sources */,

@@ -20,4 +20,6 @@ struct CarPreview:Codable
     var carDealerCity:String?
     var carDelaerState:String?
     var carDealaerContact:String?
+    var carCoverImagewidth:Double?
+    var carCoverImageHeight:Double?
 }

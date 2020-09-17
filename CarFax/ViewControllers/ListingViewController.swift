@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListingViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
+class ListingViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource,CallDealerButtonDelegate {
    
 
     @IBOutlet weak var carListingTableView: UITableView!
@@ -28,7 +28,7 @@ class ListingViewController: BaseViewController,UITableViewDelegate,UITableViewD
         self.carListingTableView.dataSource = self
         self.carListingTableView.tableFooterView = UIView()
         self.carListingTableView.register(UINib(nibName: StoryBoard.NibName.CarPreviewCell, bundle: nil), forCellReuseIdentifier: StoryBoard.CoustomCellID.CarPreviewCellID)
-        self.carListingTableView.estimatedRowHeight = 44
+        self.carListingTableView.estimatedRowHeight = 300
         self.carListingTableView.rowHeight = UITableView.automaticDimension
         activatePullTorefresh()
         
@@ -46,14 +46,12 @@ extension ListingViewController
          else { return UITableViewCell()}
         if(indexPath.row < carListingViewModel.listing.count)
         {
-            
+            cell.callDealerDelegate = self
+            cell.callDealerButton.tag = indexPath.row
             cell.setupCell(carPreviewData: mapToCellDataModel(carListingViewModel.listing[indexPath.row]))
         }
         
         return cell
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-       return 300
     }
     
     
@@ -101,4 +99,15 @@ extension ListingViewController{
             }
         }
     
+}
+
+extension ListingViewController{
+    func callDealerPressed(_ tag: Int) {
+        if(tag < carListingViewModel.listing.count)
+        {
+            let phoneToCallStr = carListingViewModel.listing[tag].dealer?.phone ?? ""
+            guard let number = URL(string: "tel://" + phoneToCallStr) else { return }
+            UIApplication.shared.open(number)
+        }
+    }
 }
