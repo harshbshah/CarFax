@@ -35,12 +35,12 @@ struct Response {
 //MARK: APIs link
 
 enum ApiLinks : String {
-    case listCars = "https://carfax-for-consumers.firebaseio.com/assignment.json"
+    case listCars =   "https://carfax-for-consumers.firebaseio.com/assignment.json"
     
     var urlLink : URL {
         switch self {
         case .listCars:
-            return URL.init(string: "https://carfax-for-consumers.firebaseio.com/assignment.json") ?? URL(fileURLWithPath: "")
+            return URL.init(string: API.URLs.userdCarListingURL) ?? URL(fileURLWithPath: "")
         }
     }
 }
