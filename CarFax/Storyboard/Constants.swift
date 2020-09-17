@@ -13,6 +13,10 @@ struct StoryBoard
     struct CoustomCellID{
         static let CarPreviewCellID:String = "CarPreviewCell"
     }
+    struct NibName
+    {
+        static let CarPreviewCell:String = "CarPreviewCell"
+    }
 }
 struct API
 {
